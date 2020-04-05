@@ -14,7 +14,7 @@ export const Header = () => (
     className="bg-white h-8 fixed"
   >
     <Actions className='flex justify-end items-center p-2'>
-      <a className='text-gray-600 ml-2' target='_blanck' href="https://github.com/ALLC84/cv-v2">
+      <a className='text-gray-600 ml-2' target='_blanck' href="https://github.com/ALLC84/cv">
         <img className='w-5' src={GithubIcon} alt="icon github.svg"/>
       </a>
     </Actions>

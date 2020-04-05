@@ -5,7 +5,7 @@ module.exports = {
     description: `Estudiante autodidacta desde 2018 de programación Web, enfocado al Frontend utilizando tecnologías como React. `,
     phone: '618377176',
     email: 'alejandrollorente.dev@gmail.com',
-    siteUrl: 'https://www.cv.alejandrollorente.com',
+    siteUrl: 'https://allc84.github.io/cv/',
     author: `@alejandro-llorente`,
   },
   plugins: [
