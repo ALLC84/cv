@@ -39,7 +39,13 @@ export const SectionDescription = props => {
 
   const TitleCourses = args => (
     <> 
-      <div role="button" onClick={handleShowModal} onKeyDown={handleShowModal} className='text-gray-800 font-semibold cursor-pointer underline'>
+      <div 
+        role="button" 
+        tabIndex={0} 
+        onClick={handleShowModal} 
+        onKeyDown={handleShowModal} 
+        className='text-gray-800 font-semibold cursor-pointer underline outline-none'
+      >
         {args.title}
       </div>
       {/* IF SHOWMODAL */}
