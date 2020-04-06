@@ -13,7 +13,7 @@ const usedTechnologies = (tecnologies) => {
       <span className='text-gray-600'>Creado utilizando, </span>
       {tecnologies.map(item => (
         <a key={uuidv4()} className='text-gray-600 ml-2' target='_blanck' href={item.url}>
-          <img className={item.class} src={item.src} alt={item.alt}/>
+          <img className={item.class || 'w-8'} src={item.src} alt={item.alt}/>
         </a>
       ))}
     </>

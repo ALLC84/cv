@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: 'https://allc84.github.io/cv/',
     author: `@alejandro-llorente`,
   },
+  pathPrefix: `/cv`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     // {
