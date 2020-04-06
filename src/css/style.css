@@ -25,7 +25,8 @@
 
 .material-icons {
   font-family: 'Material Icons';
-  font-size: 24px;
+  font-size: 20px;
+
 }
 
 
@@ -64,4 +65,16 @@
 
 .z-index-1 {
   z-index: -1;
+}
+
+
+@media (min-width: 768px) {
+  .material-icons {
+    font-size: 22px ;
+  }
+}
+@media (min-width: 1024px) {
+  .material-icons {
+    font-size: 24px ;
+  }
 }

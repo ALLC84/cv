@@ -16,7 +16,7 @@ const AbilityContent = (name, puntos = 0) => {
 
   return(
     <>
-      <div className='text-gray-300'>{name}</div>
+      <p className='text-gray-300 text-sm lg:text-base'>{name}</p>
       <div>
         {[...Array(puntos)].map(item => {
             return (

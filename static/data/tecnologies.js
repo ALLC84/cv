@@ -1,6 +1,6 @@
 import GatbsyIcon from '@images/gatsby.svg'
 import ReactIcon from '@images/react.svg'
-import StyledIcon from '@images/styled-components.svg'
+import StyledIcon from '@images/styledComponents.svg'
 import TailwindcssIcon from '@images/tailwindcss.svg'
 
 export const tecnologiesData = [

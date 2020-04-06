@@ -6,7 +6,7 @@ export const useImageAvatar = () => {
   } = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "img-about.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "imgAbout.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500, quality: 100) {
               ...GatsbyImageSharpFluid
