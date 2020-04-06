@@ -8,7 +8,7 @@ export const useImageAvatar = () => {
       query {
         placeholderImage: file(relativePath: { eq: "imgAbout.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 500, quality: 100) {
+            fluid(maxWidth: 200, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

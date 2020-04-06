@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import {theme} from '../../tailwind.config';
+const colors = require('../../colorsTheme')
 
 
 /* 
@@ -93,7 +93,7 @@ export const MainProvider = (props) => {
 			value={{
 				scroll,
 				viewport,
-				colors: theme.colors
+				colors
 			}}
 		>
 			{props.children}

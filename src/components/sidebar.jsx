@@ -1,11 +1,11 @@
 import React, {useContext} from "react"
-import { AvatarImage, SeparatorLine, Contact, Ability, TitleSection } from "@components"
-import { MainContext } from '@providers'
-import { useImageAvatar } from "@hooks"
+import { v4 as uuidv4 } from 'uuid'
 
+import { MainContext } from '@providers'
+import { abilitiesData, abilitiesTechData, languageData } from '@static/data'
+import { AvatarImage, SeparatorLine, Contact, Ability, TitleSection } from "@components"
 
 export const Sidebar = () => {
-  const image = useImageAvatar()
   const {colors} = useContext(MainContext) || { colors: {gray: {500: '#a0aec0'}}}
   
   return (
@@ -15,12 +15,7 @@ export const Sidebar = () => {
       |  IMAGEN
       |-----------------------------------------------
       */}
-      <figure>
-        <AvatarImage
-          src={image.fluid.src}
-          alt="Foto Perfil Alejandro Llorente"
-        />
-      </figure>
+      <AvatarImage />
 
       {/* 
       |-----------------------------------------------
@@ -53,16 +48,9 @@ export const Sidebar = () => {
         HABILIDADES
       </TitleSection>
       <SeparatorLine />
-      {/* HTML */}
-      <Ability name='HTML' puntos={4} />
-      {/* CSS */}
-      <Ability name='CSS' puntos={4} />
-      {/* SCSS */}
-      <Ability name='SCSS' puntos={3} />
-      {/* JAVASCRIPT */}
-      <Ability name='JAVASCRIPT' puntos={4} />
-      {/* TYPESCRIPT */}
-      <Ability name='TYPESCRIPT' puntos={3} />
+      {abilitiesData && abilitiesData.map(item => (
+        <Ability key={uuidv4()} name={item.name} puntos={item.puntos} />
+      ))}
 
       {/* 
       |-----------------------------------------------
@@ -77,16 +65,9 @@ export const Sidebar = () => {
         TECNOLOGÍAS
       </TitleSection>
       <SeparatorLine />
-      {/* REACT */}
-      <Ability name='REACT' puntos={4} />
-      {/* REACT NATIVE*/}
-      <Ability name='REACT NATIVE' puntos={3} />
-      {/* REACT - REDUX */}
-      <Ability name='REACT - REDUX' puntos={4} />
-      {/* FIREBASE */}
-      <Ability name='FIREBASE' puntos={3} />
-      {/* GIT - GITHUB */}
-      <Ability name='GIT - GITHUB' puntos={3} />
+      {abilitiesTechData && abilitiesTechData.map(item => (
+        <Ability key={uuidv4()} name={item.name} puntos={item.puntos} />
+      ))}
 
 
       {/* 
@@ -102,8 +83,9 @@ export const Sidebar = () => {
         LENGUAJE
       </TitleSection>
       <SeparatorLine />
-      <Ability name='Español'/>
-      <Ability name='Ingles' puntos={1}/>
+      {languageData && languageData.map(item => (
+        <Ability key={uuidv4()} name={item.name} puntos={item.puntos} />
+      ))}
     </>
   )
 }
