@@ -1,5 +1,5 @@
 import imageBachiller from '@images/bachiller.jpg'
-import imageEducacionFisica from '@images/educacion-fisica.jpg'
+import imageEducacionFisica from '@images/educacionFisica.jpg'
 
 export const educacionData = [
 	{
