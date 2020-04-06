@@ -66,11 +66,11 @@ export const SectionDescription = props => {
           }
           
           {/* IF SUBTITLE */}
-          {subtitle && ( <p><small><i>{subtitle}</i></small></p> )}
+          {subtitle && ( <p className='italic text-sm'>{subtitle}</p> )}
         </Left>
 
         {/* IF YEAR */}
-        { year && ( <Right> <p>{year}</p> </Right> )}
+        { year && ( <Right className='font-medium'> <p>{year}</p> </Right> )}
       </Description>
 
       {/* IF CONTENT */}

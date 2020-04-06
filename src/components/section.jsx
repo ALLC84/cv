@@ -20,7 +20,7 @@ const ButtonShowMore = styled.div`
 `
 
 export const Section = ({ content, withButton = false }) => {
-  const {colors} = useContext(MainContext) || { colors: {blue: {500: '#4299e1', 300: '#90cdf4'}}}
+  const {colors} = useContext(MainContext) || { colors: {blue: {600: '#4299e1', 400: '#90cdf4'}}}
   const [showAll, setShowAll] = useState(false)
 
   const handleShow = () => {
@@ -46,7 +46,7 @@ export const Section = ({ content, withButton = false }) => {
 
       {withButton && <ButtonShowMore 
         onClick={handleShow}
-        color={colors.blue[500]}
+        color={colors.blue[600]}
         hover={colors.blue[300]}
       >
         {!showAll ? 'Mostrar más' : 'Mostrar menos'}
