@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{w2l6:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),o=n("Wbzz"),r=n("Kvkj");t.default=function(){return l.a.createElement(r.g,null,l.a.createElement(r.i,{title:"404: Not found"}),l.a.createElement("h1",{className:"font-bold"}," PÁGINAS NO ENCONTRADA "),l.a.createElement(o.Link,{to:"/"}," ",l.a.createElement("p",{className:"text-primary font-semibold underline mb-16"},"Volver al Home")," "))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-72d4a92cdf4674ddb8ab.js.map
