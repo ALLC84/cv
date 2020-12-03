@@ -1,29 +1,21 @@
 module.exports = {
   siteMetadata: {
     name: `Alejandro Llorente`,
-    title: `Desarollador Frontend Junior`,
-    description: `Estudiante autodidacta desde 2018 de programación Web, enfocado al Frontend utilizando tecnologías como React. `,
-    phone: '618377176',
-    email: 'alejandrollorente.dev@gmail.com',
-    siteUrl: 'https://allc84.github.io/cv/',
+    title: `Desarollador Frontend`,
+    description: `Estudiante autodidacta de programación Web, enfocado al Frontend utilizando tecnologías como React y Vue. `,
+    phone: "618377176",
+    email: "alejandrollorente.dev@gmail.com",
+    siteUrl: "https://cv.alejandrollorente.com/",
     author: `@alejandro-llorente`,
   },
   pathPrefix: `/cv`,
   plugins: [
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          'material icons'
-        ]
-      }
+        fonts: ["material icons"],
+      },
     },
     `gatsby-plugin-postcss`,
     {
@@ -43,43 +35,43 @@ module.exports = {
         start_url: `/`,
         background_color: `#FAF7F6`,
         theme_color: `#1E0762`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/gatsbyIcon.png`, // This path is relative to the root of the site.
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        configFile: 'robots-txt.config.js'
-      }
+        configFile: "robots-txt.config.js",
+      },
     },
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
         tailwind: true,
-        purgeOnly: ["src/css/"]
-      }
+        purgeOnly: ["src/css/"],
+      },
     },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        displayName: false
+        displayName: false,
       },
     },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          '@components': `${__dirname}/src/components`,
-          '@hooks': `${__dirname}/src/hooks`,
-          '@utils': `${__dirname}/src/utils`,
-          '@images': `${__dirname}/src/images`,
-          '@css': `${__dirname}/src/css`,
-          '@providers': `${__dirname}/src/providers`,
-          '@static': `${__dirname}/static`
+          "@components": `${__dirname}/src/components`,
+          "@hooks": `${__dirname}/src/hooks`,
+          "@utils": `${__dirname}/src/utils`,
+          "@images": `${__dirname}/src/images`,
+          "@css": `${__dirname}/src/css`,
+          "@providers": `${__dirname}/src/providers`,
+          "@static": `${__dirname}/static`,
         },
-        extensions: ['js', 'css', 'png', 'jpg', 'svg', 'jsx']
-      }
+        extensions: ["js", "css", "png", "jpg", "svg", "jsx"],
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

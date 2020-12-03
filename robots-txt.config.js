@@ -1,5 +1,5 @@
 module.exports = {
-    host: 'https://allc84.github.io/cv/',
-    sitemap: 'https://allc84.github.io/cv/sitemap.xml',
+    host: 'https://cv.alejandrollorente.com/',
+    sitemap: 'https://cv.alejandrollorente.com/sitemap.xml',
     policy: [{ userAgent: '*' }]
 };
