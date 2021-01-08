@@ -1,5 +1,11 @@
 export const experienciaData = [
   {
+    title: "CON&SEL15",
+    subtitle: "Actualmente trabajando como desarrollador Frontend Vue.js",
+    year: "2021",
+    url: "https://www.conisel.com/",
+  },
+  {
     title: "Power Enterprise Electrical Corp.",
     subtitle: "Creado utilizando: Vue y DatoCMS",
     year: "2020",
@@ -21,7 +27,7 @@ export const experienciaData = [
     title: "Eagler ( Actualmente en desarrollo )",
     subtitle: "Creado utilizando: React Native, Redux y Firebase",
     year: "2019 - 2020",
-    url: "https://apps.apple.com/es/app/eagler/id1489696627",
+    url: "https://play.google.com/store/apps/details?id=com.eagler.eagler",
   },
   {
     title: "CentroCep",
