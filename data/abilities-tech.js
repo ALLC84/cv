@@ -13,7 +13,7 @@ export const abilitiesTechData = [
   },
   {
     name: "VUE",
-    puntos: 2,
+    puntos: 4,
   },
   {
     name: "FIREBASE",

@@ -1,17 +1,17 @@
-import imageBachiller from '@images/bachiller.jpg'
-import imageEducacionFisica from '@images/educacionFisica.jpg'
+import imageBachiller from "@images/bachiller.jpg"
+import imageEducacionFisica from "@images/educacionFisica.jpg"
 
 export const educacionData = [
-	{
-		title: "Bachiller",
-		subtitle: "Manuel Permui (ESPA), Habana, Cuba",
-		year: "2002",
-		imageTitulo: imageBachiller
-	},
-	{
-		title: "Profesor Educacion Física",
-		subtitle: "Manuel Fajardo (EPEF), Habana, Cuba",
-		year: "2005",
-		imageTitulo: imageEducacionFisica
-	},
+  {
+    title: "Profesor Educacion Física",
+    subtitle: "Manuel Fajardo (EPEF), Habana, Cuba",
+    year: "2005",
+    imageTitulo: imageEducacionFisica,
+  },
+  {
+    title: "Bachiller",
+    subtitle: "Manuel Permui (ESPA), Habana, Cuba",
+    year: "2002",
+    imageTitulo: imageBachiller,
+  },
 ]
