@@ -32,7 +32,7 @@ export default {
   &__name {
     flex: 1;
     color: $color-light-gray;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
 
