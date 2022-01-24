@@ -1,6 +1,6 @@
 <template>
   <div class="actions">
-    <a target="_blanck" href="https://github.com/ALLC84/cv">
+    <a target="_blanck" href="https://github.com/ALLC84/cv-vuejs">
       <img class="img" :src="GithubIcon" alt="icon github.svg" />
     </a>
     <a v-if="pdfToDownload" :href="pdfToDownload.url" target="_blanck" download>
