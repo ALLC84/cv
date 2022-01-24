@@ -1,14 +1,21 @@
 {
-  "name": "cv-alejandrollorente",
-  "version": "0.1.0",
+  "name": "cv-alejandro-llorente",
+  "version": "1.0.0",
   "private": true,
+  "author": "@alejandro_llorente",
+  "homepage": "https://cv.alejandrollorente.com",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "gh-pages": "^3.2.3",
+    "graphql": "^16.2.0",
+    "graphql-request": "^3.7.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {
@@ -18,21 +25,17 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.3.0",
+    "sass-loader": "^10.1.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+  "repository": {
+    "type": "git",
+    "url": "https://allc84.github.io/cv-vuejs/"
   },
   "browserslist": [
     "> 1%",
