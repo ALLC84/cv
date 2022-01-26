@@ -1,9 +1,13 @@
 <template>
   <section>
     <header>
-      <TitleSection :size="mobileExt ? 1.6 : 2" :weight="800" :mt="1.5">
-        {{ nameSection }}
-      </TitleSection>
+      <TitleSection
+        tag="h3"
+        :text="nameSection"
+        :size="mobileExt ? 1.6 : 2"
+        :weight="800"
+        :mt="1.5"
+      />
     </header>
     <PartingLine :weight="0.15" :width="20" bg="rgb(49, 130, 206)" />
     <div>

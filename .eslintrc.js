@@ -61,6 +61,7 @@ module.exports = {
     'arrow-parens': [1, 'as-needed'],
     'consistent-return': 0,
     'no-underscore-dangle': ['error', { allow: ['_retry'] }],
+    'vue/no-v-html': 'off',
     'vue/html-indent': ['error', 2],
     'vue/max-attributes-per-line': 'off',
     'vue/html-closing-bracket-newline': ['error', { multiline: 'always' }],

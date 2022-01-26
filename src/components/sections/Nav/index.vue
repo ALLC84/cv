@@ -1,10 +1,32 @@
 <template>
   <section class="actions">
-    <a target="_blanck" href="https://github.com/ALLC84/cv-vuejs">
-      <img class="img" :src="GithubIcon" alt="icon github.svg" />
+    <a
+      href="https://github.com/ALLC84/cv-vuejs"
+      target="_blanck"
+      rel="noreferrer"
+    >
+      <img
+        class="img"
+        :src="GithubIcon"
+        alt="icon github.svg"
+        width="20"
+        height="20"
+      />
     </a>
-    <a v-if="pdfToDownload" :href="pdfToDownload.url" target="_blanck" download>
-      <img class="img" :src="DownloadButton" alt="icon download" />
+    <a
+      v-if="pdfToDownload"
+      :href="pdfToDownload.url"
+      target="_blanck"
+      rel="noreferrer"
+      download
+    >
+      <img
+        class="img"
+        :src="DownloadButton"
+        alt="icon download"
+        width="20"
+        height="20"
+      />
     </a>
   </section>
 </template>
@@ -65,7 +87,8 @@ export default {
   justify-content: flex-end;
 
   .img {
-    width: 1.3rem;
+    width: 20px;
+    height: 20px;
     margin-left: 0.8rem;
   }
 }

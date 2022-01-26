@@ -17,10 +17,16 @@
         v-for="(tecnologie, index) in rightSection.tecnologies"
         :key="index"
         class="footer__rightSection__link"
-        target="_blanck"
         :href="tecnologie.url"
+        target="_blanck"
+        rel="noreferrer"
       >
-        <img :src="tecnologie.brand.url" :alt="tecnologie.brand.alt" />
+        <img
+          :src="tecnologie.brand.url"
+          :alt="tecnologie.brand.alt"
+          width="16"
+          height="16"
+        />
       </a>
     </div>
   </footer>
@@ -109,8 +115,8 @@ export default {
 
     &__link {
       img {
-        width: 1rem;
-        height: 1rem;
+        width: 16px;
+        height: 16px;
         margin-right: 0.5rem;
       }
     }

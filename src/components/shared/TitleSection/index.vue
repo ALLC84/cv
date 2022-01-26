@@ -1,10 +1,5 @@
 <template>
-  <h1 v-if="isMainSlotContent" ref="mainSlot" :style="styleObject">
-    <slot name="main-title" />
-  </h1>
-  <h3 v-if="isDevaultSlotContent" ref="defaultSlot" :style="styleObject">
-    <slot />
-  </h3>
+  <div v-html="myhtml" />
 </template>
 
 <script>
@@ -12,9 +7,13 @@ export default {
   name: 'TitleSection',
 
   props: {
+    tag: {
+      type: String,
+      default: 'h1',
+    },
     text: {
       type: String,
-      default: '',
+      default: 'Necesita pasar la prop ( text )',
     },
     size: {
       type: Number,
@@ -38,23 +37,35 @@ export default {
     },
   },
 
+  // data() {
+  //   return {
+  //     myhtml: `
+  // <${this.tag}
+  // style="
+  //   font-size: ${this.size}rem;
+  //   font-weight: ${this.weight};
+  //   color: ${this.color};
+  //   margin-top: ${this.mt}rem;
+  //   margin-bottom: ${this.mb}rem;
+  // ">
+  //   ${this.text}
+  // </${this.tag}>`,
+  //   };
+  // },
+
   computed: {
-    styleObject() {
-      return {
-        fontSize: `${this.size}rem`,
-        fontWeight: this.weight,
-        color: this.color,
-        marginTop: `${this.mt}rem`,
-        marginBottom: `${this.mb}rem`,
-      };
-    },
-
-    isMainSlotContent() {
-      return !!this.$slots['main-title'];
-    },
-
-    isDevaultSlotContent() {
-      return !!this.$slots.default;
+    myhtml() {
+      return `
+  <${this.tag}
+  style="
+    font-size: ${this.size}rem;
+    font-weight: ${this.weight};
+    color: ${this.color};
+    margin-top: ${this.mt}rem;
+    margin-bottom: ${this.mb}rem;
+  ">
+    ${this.text}
+  </${this.tag}>`;
     },
   },
 };
