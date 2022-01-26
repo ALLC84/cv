@@ -1,19 +1,19 @@
 <template>
   <header class="header">
-    <section>
+    <div>
       <TitleSection :size="mobileExt ? 2.2 : 3.2" :weight="900">
         <template #main-title>{{ dataHeader.name }}</template>
       </TitleSection>
-    </section>
+    </div>
     <PartingLine :weight="0.15" :width="20" bg="rgb(49, 130, 206)" />
-    <section>
+    <div>
       <TitleSection :weight="700" :mt="1">
         {{ dataHeader.profession }}
       </TitleSection>
       <p v-for="(paragraph, index) in dataHeader.about" :key="index">
         {{ paragraph }}
       </p>
-    </section>
+    </div>
   </header>
 </template>
 

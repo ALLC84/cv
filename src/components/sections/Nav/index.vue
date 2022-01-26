@@ -1,12 +1,12 @@
 <template>
-  <div class="actions">
+  <section class="actions">
     <a target="_blanck" href="https://github.com/ALLC84/cv-vuejs">
       <img class="img" :src="GithubIcon" alt="icon github.svg" />
     </a>
     <a v-if="pdfToDownload" :href="pdfToDownload.url" target="_blanck" download>
       <img class="img" :src="DownloadButton" alt="icon download" />
     </a>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -24,7 +24,7 @@ query {
 `;
 
 export default {
-  name: 'Header',
+  name: 'Nav',
 
   data() {
     return {

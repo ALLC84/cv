@@ -2,9 +2,9 @@
   <h1 v-if="isMainSlotContent" ref="mainSlot" :style="styleObject">
     <slot name="main-title" />
   </h1>
-  <h2 v-if="isDevaultSlotContent" ref="defaultSlot" :style="styleObject">
+  <h3 v-if="isDevaultSlotContent" ref="defaultSlot" :style="styleObject">
     <slot />
-  </h2>
+  </h3>
 </template>
 
 <script>

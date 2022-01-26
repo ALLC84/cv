@@ -3455,6 +3455,11 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+ed-animate@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ed-animate/-/ed-animate-1.0.1.tgz#5380899cb620d141fa034f7a9a0b5b00e66a29a8"
+  integrity sha512-mZkeidXB67TKfGnIbLWiKrbpzVAgH25TW6Hok6o1hcPydLd2oKJ9SmC8svyJZEQDxoJ8cSKsvs8s0EVvvIs05Q==
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"

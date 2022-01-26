@@ -28,7 +28,7 @@ export default {
   border: 2px solid #c4c4c4;
   border-radius: 100%;
   vertical-align: middle;
-  margin: 0 auto;
+  margin: calc(#{$padding-content} / 1.5) auto;
   overflow: hidden;
   width: 200px;
   height: 200px;

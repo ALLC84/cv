@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <template #header>
-      <Header />
+    <template #nav>
+      <Nav />
     </template>
     <template #aside>
       <Aside />
@@ -19,15 +19,15 @@
 import Layout from '@components/layouts/index.vue';
 import Aside from '@components/sections/Aside/index.vue';
 import Footer from '@components/sections/Footer/index.vue';
-import Header from '@components/sections/Header/index.vue';
 import Main from '@components/sections/Main/index.vue';
+import Nav from '@components/sections/Nav/index.vue';
 
 export default {
   name: 'App',
 
   components: {
     Layout,
-    Header,
+    Nav,
     Aside,
     Main,
     Footer,
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
+*,
 *::before,
 *::after {
   box-sizing: border-box;

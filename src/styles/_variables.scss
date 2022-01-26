@@ -2,22 +2,18 @@
 //----------------------------------------------------------------
 $layout-max-width: 56rem;
 $layout-border-radius: 0.5rem;
-$aside-min-width: 15rem;
+$aside-min-width: 17rem;
 
 // COLORS
 //----------------------------------------------------------------
 $transparent: "transparent";
 $black: rgb(46, 46, 46);
 $white: #fff;
-$primary: #1e0762;
-$color-main: rgb(28, 52, 65);
-$color-light-gray: #f5f5f5;
 $color-gray: #a0aec0;
-$color-dark-gray: #4a5568;
-// Inherited colors
-$color-title: #53575a;
+$color-light-gray: lighten($color-gray, 50%);
+$color-dark-gray: darken($color-gray, 35%);
 $color-bg-sidebar: #1c3441;
-$color-bg-content: $color-light-gray;
+$color-bg-content: darken($white, 4%);
 
 // FONTS
 //----------------------------------------------------------------
@@ -31,7 +27,13 @@ $font-size-content: clamp(var(--minFontSize), var(--scalerFont), var(--maxFontSi
 // SPACING
 //----------------------------------------------------------------
 :root {
-  --gap: 1rem;
+  --minGap: 1rem;
+  --gap: 1.2rem;
+  --maxGap: 1.5rem;
 }
-// $padding-content: clamp(calc(var(--gap) - 0.3rem), var(--gap), calc(var(--gap) + 0.3rem));
-$padding-content: 1.2rem;
+$padding-content: clamp(var(--minGap), var(--gap), var(--maxGap));
+// $padding-content: 20px;
+
+// ANIMATIONS ED_TEAM
+//----------------------------------------------------------------
+$EDanimatehelpers: false

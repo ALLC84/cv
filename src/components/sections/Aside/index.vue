@@ -1,5 +1,5 @@
 <template>
-  <div class="aside">
+  <section>
     <!--
     |-----------------------------------------------
     |  IMAGEN
@@ -20,22 +20,22 @@
     >
       CONTACTO
     </TitleSection>
-    <PartingLine />
+    <PartingLine :weight="0.15" />
     <Contact />
+  </section>
 
-    <!--
+  <!--
     |-----------------------------------------------
     |  HABILIDADES, TECNOLOGÍAS, LENGUAJES
     |-----------------------------------------------
     -->
-    <section v-for="(section, index) in dataContent" :key="index">
-      <TitleSection :color="colorText" :mt="titleMarginTop" :weight="700">
-        {{ section.name }}
-      </TitleSection>
-      <PartingLine />
-      <AbilityLevel :skills="section.skills" />
-    </section>
-  </div>
+  <section v-for="(section, index) in dataContent" :key="index">
+    <TitleSection :color="colorText" :mt="titleMarginTop" :weight="700">
+      {{ section.name }}
+    </TitleSection>
+    <PartingLine :weight="0.15" />
+    <AbilityLevel :skills="section.skills" />
+  </section>
 </template>
 
 <script>
