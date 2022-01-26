@@ -17,9 +17,8 @@
       :color="colorText"
       :mt="titleMarginTop"
       :weight="700"
-    >
-      CONTACTO
-    </TitleSection>
+      tag="h4"
+    />
     <PartingLine :weight="0.15" />
     <Contact />
   </section>
@@ -30,9 +29,13 @@
     |-----------------------------------------------
     -->
   <section v-for="(section, index) in dataContent" :key="index">
-    <TitleSection :color="colorText" :mt="titleMarginTop" :weight="700">
-      {{ section.name }}
-    </TitleSection>
+    <TitleSection
+      :text="section.name"
+      :color="colorText"
+      :mt="titleMarginTop"
+      :weight="700"
+      tag="h4"
+    />
     <PartingLine :weight="0.15" />
     <AbilityLevel :skills="section.skills" />
   </section>

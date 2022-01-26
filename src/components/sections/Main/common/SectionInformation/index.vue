@@ -3,8 +3,13 @@
     <!-- INFORMATION -->
     <div class="section" :class="!showAll && index >= 3 ? 'no-display' : ''">
       <div class="section__left">
-        <h3 class="section__left__title">
-          <a v-if="information.url" :href="information.url" target="_blanck">
+        <h4 class="section__left__title">
+          <a
+            v-if="information.url"
+            :href="information.url"
+            target="_blanck"
+            rel="noreferrer"
+          >
             {{ information.title }}
           </a>
 
@@ -17,7 +22,7 @@
             :url="information.image.url"
             :alt="information.image.alt"
           />
-        </h3>
+        </h4>
         <p class="section__left__subtitle">{{ information.subtitle }}</p>
       </div>
       <div class="section__right">{{ information.year }}</div>
@@ -86,7 +91,7 @@ export default {
         transition: all 0.3s ease;
 
         &:hover {
-          color: rgb(49, 130, 206);
+          color: $color-button-hover;
         }
       }
 
@@ -112,11 +117,11 @@ export default {
   &__button {
     font-size: 0.9rem;
     display: inline-block;
-    color: rgb(49, 130, 206);
+    color: $color-button;
     font-weight: 600;
 
     &:hover {
-      color: rgba(49, 130, 206, 0.664);
+      color: $color-button-hover;
       cursor: pointer;
     }
   }

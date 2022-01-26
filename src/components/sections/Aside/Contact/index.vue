@@ -7,19 +7,19 @@
   <ul v-if="contactData" class="list">
     <li class="list__item">
       <a :href="`tel:+${contactData.call.phone}`">
-        <img :src="CallIcon" alt="call icon svg" />
+        <img :src="CallIcon" alt="call icon svg" width="20" height="20" />
         {{ contactData.call.title }}
       </a>
     </li>
     <li class="list__item">
       <a :href="`mailto:${contactData.mail.email}`">
-        <img :src="EmailIcon" alt="email icon svg" />
+        <img :src="EmailIcon" alt="email icon svg" width="20" height="20" />
         {{ contactData.mail.title }}
       </a>
     </li>
     <li class="list__item">
-      <a :href="contactData.linkedin.url" target="_blanck">
-        <img :src="LinkIcon" alt="link icon svg" />
+      <a :href="contactData.linkedin.url" target="_blanck" rel="noreferrer">
+        <img :src="LinkIcon" alt="link icon svg" width="20" height="20" />
         {{ contactData.linkedin.title }}
       </a>
     </li>
@@ -94,6 +94,8 @@ export default {
 
       img {
         margin-right: 0.5rem;
+        width: 20px;
+        height: 20px;
       }
 
       &:hover {
