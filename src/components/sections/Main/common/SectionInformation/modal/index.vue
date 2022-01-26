@@ -3,7 +3,7 @@
     <div class="modal__button" @click="handleImage">
       {{ showImage ? 'Ocultar' : 'Mostrar' }}
     </div>
-    <img v-if="showImage" :src="url" :alt="alt" />
+    <img v-show="showImage" :src="url" :alt="alt" />
   </div>
 </template>
 
@@ -44,6 +44,8 @@ export default {
     max-width: 100%;
     top: 1.6rem;
     left: 0;
+
+    @include fadeIn(1s);
   }
 
   &__button {
@@ -54,6 +56,10 @@ export default {
     border-radius: 1rem;
     color: $color-light-gray;
     margin-left: 0.5rem;
+
+    &:hover {
+      background: lighten($color-bg-sidebar, 15%);
+    }
   }
 
   @include for-size(tablet-landscape-up) {

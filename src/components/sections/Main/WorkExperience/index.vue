@@ -1,15 +1,15 @@
 <template>
-  <header class="header">
-    <section>
+  <section>
+    <header>
       <TitleSection :size="mobileExt ? 1.6 : 2" :weight="800" :mt="1.5">
-        <template #main-title>{{ nameSection }}</template>
+        {{ nameSection }}
       </TitleSection>
-    </section>
-    <PartingLine :weight="0.1" :width="20" bg="rgb(49, 130, 206)" />
-    <section>
+    </header>
+    <PartingLine :weight="0.15" :width="20" bg="rgb(49, 130, 206)" />
+    <div>
       <SectionInformation :data="workExperience" />
-    </section>
-  </header>
+    </div>
+  </section>
 </template>
 
 <script>

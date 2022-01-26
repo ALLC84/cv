@@ -1,35 +1,33 @@
 <template>
-  <section>
-    <div v-for="(information, index) in data" :key="index">
-      <!-- INFORMATION -->
-      <div class="section" :class="!showAll && index >= 3 ? 'no-display' : ''">
-        <div class="section__left">
-          <h3 class="section__left__title">
-            <a v-if="information.url" :href="information.url" target="_blanck">
-              {{ information.title }}
-            </a>
+  <div v-for="(information, index) in data" :key="index">
+    <!-- INFORMATION -->
+    <div class="section" :class="!showAll && index >= 3 ? 'no-display' : ''">
+      <div class="section__left">
+        <h3 class="section__left__title">
+          <a v-if="information.url" :href="information.url" target="_blanck">
+            {{ information.title }}
+          </a>
 
-            <span v-if="!information.url">
-              {{ information.title }}
-            </span>
+          <span v-if="!information.url">
+            {{ information.title }}
+          </span>
 
-            <ModalStadyTitle
-              v-if="information.image"
-              :url="information.image.url"
-              :alt="information.image.alt"
-            />
-          </h3>
-          <p class="section__left__subtitle">{{ information.subtitle }}</p>
-        </div>
-        <div class="section__right">{{ information.year }}</div>
+          <ModalStadyTitle
+            v-if="information.image"
+            :url="information.image.url"
+            :alt="information.image.alt"
+          />
+        </h3>
+        <p class="section__left__subtitle">{{ information.subtitle }}</p>
       </div>
+      <div class="section__right">{{ information.year }}</div>
     </div>
+  </div>
 
-    <!-- BUTTON -->
-    <div v-if="widthButton" class="section__button" @click="showMore">
-      {{ showAll ? 'Mostrar menos' : 'Mostrar mas' }}
-    </div>
-  </section>
+  <!-- BUTTON -->
+  <div v-if="widthButton" class="section__button" @click="showMore">
+    {{ showAll ? 'Mostrar menos' : 'Mostrar mas' }}
+  </div>
 </template>
 
 <script>
@@ -122,9 +120,8 @@ export default {
       cursor: pointer;
     }
   }
-
-  .no-display {
-    display: none;
-  }
+}
+.no-display {
+  display: none;
 }
 </style>

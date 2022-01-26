@@ -1,45 +1,43 @@
 <template>
-  <div>
-    <!--
+  <!--
     |-----------------------------------------------
     |  HEADER
     |-----------------------------------------------
     -->
-    <HeaderContent v-if="contactData" :data="contactData" />
+  <HeaderContent v-if="contactData" :data="contactData" />
 
-    <!-- PARTING LINE -->
-    <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
+  <!-- LINE -->
+  <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
 
-    <!--
+  <!--
     |-----------------------------------------------
     |  EXPERIENCIA LABORAL
     |-----------------------------------------------
     -->
-    <WorkExperience v-if="workExperience" :data="workExperience" />
+  <WorkExperience v-if="workExperience" :data="workExperience" />
 
-    <!-- PARTING LINE -->
-    <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
+  <!-- LINE -->
+  <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
 
-    <!--
+  <!--
     |-----------------------------------------------
     |  EDUCACION
     |-----------------------------------------------
     -->
-    <Education v-if="educationData" :data="educationData" />
+  <Education v-if="educationData" :data="educationData" />
 
-    <!-- PARTING LINE -->
-    <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
+  <!-- LINE -->
+  <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
 
-    <!--
+  <!--
     |-----------------------------------------------
     |  CURSOS
     |-----------------------------------------------
     -->
-    <Courses v-if="coursesData" :data="coursesData" />
+  <Courses v-if="coursesData" :data="coursesData" />
 
-    <!-- PARTING LINE -->
-    <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
-  </div>
+  <!-- LINE -->
+  <PartingLine :weight="0.01" :width="100" :mt="1" :bt="1" />
 </template>
 
 <script>

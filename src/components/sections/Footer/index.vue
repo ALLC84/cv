@@ -96,15 +96,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding: 1.5rem;
-  // background-color: #fafafa;
-  // border-top: 1px solid #eaeaea;
-  // font-size: 0.8rem;
-  // font-weight: 500;
+  font-size: 0.8rem;
   color: $color-dark-gray;
-
-  // &__leftSection {
-  // }
 
   &__rightSection {
     display: flex;
