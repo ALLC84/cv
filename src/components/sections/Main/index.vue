@@ -60,13 +60,13 @@ query {
       value
     }
   }
-  allWorkExperiences {
+  allWorkExperiences(orderBy: year_DESC) {
     title
     subtitle
     url
     year
   }
-  allEducations {
+  allEducations(orderBy: year_DESC) {
     title
     subtitle
     year
@@ -75,7 +75,7 @@ query {
       url
     }
   }
-  allCourses {
+  allCourses(orderBy: year_DESC) {
     title
     subtitle
     year

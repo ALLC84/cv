@@ -1,9 +1,8 @@
 <template>
   <div class="wrapper__image">
     <img
-      v-if="contact"
       class="image__avatar"
-      :src="contact.photo.url"
+      :src="imgCMS ? imgCMS : localImg"
       :alt="contact.photo.alt"
       width="200"
       height="200"
@@ -11,6 +10,8 @@
   </div>
 </template>
 <script>
+import localImg from '@assets/images/imgabout.jpg';
+
 export default {
   name: 'Avatar',
 
@@ -18,6 +19,18 @@ export default {
     contact: {
       type: Object,
       required: true,
+    },
+  },
+
+  data() {
+    return {
+      localImg,
+    };
+  },
+
+  computed: {
+    imgCMS() {
+      return this.contact.photo.url;
     },
   },
 };

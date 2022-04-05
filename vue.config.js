@@ -8,6 +8,7 @@ module.exports = {
         '@components': path.resolve(__dirname, 'src/components'),
         '@lib': path.resolve(__dirname, 'src/lib'),
         '@mixins': path.resolve(__dirname, 'src/mixins'),
+        '@assets': path.resolve(__dirname, 'src/assets'),
       },
     },
   },
