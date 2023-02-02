@@ -11,7 +11,7 @@
     </header>
     <PartingLine :weight="0.15" :width="20" bg="rgb(49, 130, 206)" />
     <div>
-      <SectionInformation :data="workExperience" />
+      <SectionInformation :data="workExperience" :width-button="showButton" />
     </div>
   </section>
 </template>
@@ -51,6 +51,9 @@ export default {
     workExperience() {
       return this.data;
     },
+    showButton() {
+      return this.workExperience.length > 3;
+    }
   },
 };
 </script>

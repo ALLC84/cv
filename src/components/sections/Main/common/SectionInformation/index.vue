@@ -52,7 +52,7 @@ export default {
     },
     widthButton: {
       type: Boolean,
-      default: true,
+      default: false,
     },
   },
 

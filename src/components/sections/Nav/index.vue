@@ -74,7 +74,7 @@ export default {
         });
         this.pdfToDownload = upload;
       } catch (e) {
-        this.error = e;
+        console.log({ e });
       }
     },
   },

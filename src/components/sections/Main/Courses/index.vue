@@ -11,7 +11,7 @@
     </header>
     <PartingLine :weight="0.15" :width="20" bg="rgb(49, 130, 206)" />
     <div>
-      <SectionInformation :data="courses" />
+      <SectionInformation :data="courses" :width-button="showButton" />
     </div>
   </section>
 </template>
@@ -51,6 +51,9 @@ export default {
     courses() {
       return this.data;
     },
+    showButton() {
+      return this.courses.length > 3;
+    }
   },
 };
 </script>

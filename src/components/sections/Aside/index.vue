@@ -53,11 +53,11 @@ import Contact from './Contact/index.vue';
 
 const QUERY = `
 query {
-	allAbilities {
+	allAbilities(orderBy: orderId_ASC) {
 		name
     points
 	}
-  allAbilitieTeches {
+  allAbilitieTeches(orderBy: orderId_ASC) {
     name
     points
   }

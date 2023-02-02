@@ -11,7 +11,7 @@
     </header>
     <PartingLine :weight="0.15" :width="20" bg="rgb(49, 130, 206)" />
     <div>
-      <SectionInformation :data="education" :width-button="false" />
+      <SectionInformation :data="education" />
     </div>
   </section>
 </template>

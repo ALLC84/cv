@@ -98,12 +98,6 @@ export default {
 
   data() {
     return {
-      dataHeader: {
-        name: 'Alejandro llorente',
-        title: 'Desarrollador Frontend',
-        description:
-          'Desarrollador web, apasionado por la tecnología y la programación.',
-      },
       contact: null,
       workExperience: [],
       education: [],
